@@ -1,20 +1,20 @@
 
 import React from 'react';
 
-import classes from './Forum.module.css'
+import './Discussion.scss'
 
 const PinnedPost = (props) => (
-    <div className={classes.pinned_post} id={props.key}>
-        <div className={classes.heading}>
-            <div className={classes.left_section}>{props.poster}</div>
-            <div className={classes.right_section}>{props.date}</div>
-            <div className={classes.subject_line}>{props.subject}</div>
+    <div className='pinned_post' id={props.key}>
+        <div className='heading'>
+            <div className='left_section'>{props.poster}</div>
+            <div className='right_section'>{props.date}</div>
+            <div className='subject_line'>{props.subject}</div>
             
         </div>
-        <div className={classes.body}>
+        <div className='body'>
             {props.children}
         </div>
-        <div className={classes.post_footer}><a href="javascript:void(0)">Like (23)</a><a href="javascript:void(0)">Unpin</a></div>
+        <div className='post_footer'><a href="javascript:void(0)">Like (23)</a><a href="javascript:void(0)">Unpin</a></div>
     </div>
 );
 

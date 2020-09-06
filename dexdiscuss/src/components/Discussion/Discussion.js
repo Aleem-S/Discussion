@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Post from './Post'
-import classes from './Forum.module.css'
+import  './Discussion.scss'
 
 const watchlist = [{ id:1,count: "1,980",  subject:"price target by Christmas?", text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from", date:"12/12/2018", poster:"Crypto king" },
 { id:2,count: "2,345",  subject:"Re: Team lacks capability",  text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet", date:"12/12/2018", poster:"Brotherly" },
@@ -12,11 +12,11 @@ const watchlist = [{ id:1,count: "1,980",  subject:"price target by Christmas?",
 { id:7,count: "2", subject:"Damn it",text: " The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.", date:"12/12/2018", poster:"Lisa" },
 { id:8,count: "23,344",  text: " It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.", date:"12/12/2018", poster:"Millenia" },]
 
-const Forum = (props) => (
-    <div className={classes.forum_container}>
-    <div className={classes.heading_section}>
-    <div className={classes.forum_heading}>Discussion</div>
-    <div className={classes.write_post}><button>Write post</button></div>
+const Discussion = (props) => (
+    <div className='forum_container'>
+    <div className='heading_section'>
+    <div className='forum_heading'>Discussion</div>
+    <div className='write_post'><button>Write post</button></div>
     </div>
     {
         watchlist.map((item, index) => 
@@ -29,4 +29,4 @@ const Forum = (props) => (
     
 );
 
-export default Forum;
+export default Discussion;

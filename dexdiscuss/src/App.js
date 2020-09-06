@@ -2,10 +2,12 @@ import React from 'react';
 
 import './App.css';
 
+import Discuss from './components/Discussion/Home'
+
 function App() {
   return (
     <div >
-  Hello world!
+  <Discuss></Discuss>
     </div>
   );
 }

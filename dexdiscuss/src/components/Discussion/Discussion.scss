@@ -20,7 +20,7 @@
 .post .middle_section{display:inline-block;width:33%;height:100%;}
 
 .post .right_section{display:inline-block;width:33%;height:100%;text-align: right;}
-.post .body{padding-top:8px;}
+.post .body{padding-top:8px; color:silver;}
 .post_footer{text-align: right;margin-top:15px;}
 .post_footer a{margin:15px 4px 15px 4px;}
 
@@ -32,3 +32,4 @@
 .pinned_post .subject_line{display:inline-block;width:100%; font-weight: normal;}
 
 .pinned_post .right_section{display:inline-block;width:50%;height:100%;text-align: right;}
+.pinned_post .body{color:silver;}
