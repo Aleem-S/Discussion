@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
-import Discussion from './Discussion'
-import PinnedPosts from './PinnedPosts'
+import Discussion from '../components/Discussion/Discussion'
+import PinnedPosts from '../components/Discussion/PinnedPosts'
 
 
 
-import './Discussion.scss';
+import './Home.scss'
 
 class Home extends Component {
 

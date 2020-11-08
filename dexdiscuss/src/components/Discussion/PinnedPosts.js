@@ -18,7 +18,7 @@ const PinnedPosts = (props) => (
     {
         posts.map((item, index) => 
 
-            <PinnedPost key={item.id} count={item.count} poster={item.poster} date={item.date} subject={item.subject}>{item.text}</PinnedPost>
+            <PinnedPost id={item.id} count={item.count} poster={item.poster} date={item.date} subject={item.subject}>{item.text}</PinnedPost>
         )
     }
     </div>

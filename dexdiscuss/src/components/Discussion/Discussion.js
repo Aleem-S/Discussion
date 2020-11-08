@@ -21,7 +21,7 @@ const Discussion = (props) => (
     {
         watchlist.map((item, index) => 
 
-            <Post key={item.id} count={item.count} poster={item.poster} date={item.date} subject={item.subject}>{item.text}</Post>
+            <Post id={item.id} count={item.count} poster={item.poster} date={item.date} subject={item.subject}>{item.text}</Post>
         )
     }
     

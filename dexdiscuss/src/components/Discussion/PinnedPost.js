@@ -4,7 +4,7 @@ import React from 'react';
 import './Discussion.scss'
 
 const PinnedPost = (props) => (
-    <div className='pinned_post' id={props.key}>
+    <div className='pinned_post' id={props.id}>
         <div className='heading'>
             <div className='left_section'>{props.poster}</div>
             <div className='right_section'>{props.date}</div>
