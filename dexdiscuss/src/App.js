@@ -5,7 +5,7 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom'
 import HomePage from './Pages/Home'
 import LoginPage from './Pages/LoginPage'
 import Header from './components/Header/Header'
-import {auth} from './firebase/firebase.util'
+import {auth, createUserProfileDocument} from './firebase/firebase.util'
 class App extends React.Component {
   constructor(){
     super();
@@ -17,7 +17,7 @@ class App extends React.Component {
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.setState({ currentUser: user });
-
+      createUserProfileDocument(user);
       console.log(user);
     });
   }
